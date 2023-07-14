@@ -1,0 +1,75 @@
+.MyNeeds {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.MyNeeds h2 {
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.MyNeeds ul {
+    margin-top: 1rem;
+}
+
+.MyNeeds h3 {
+    font-size: 12px;
+    text-align: center;
+}
+
+/* --- */
+
+.MyNeedsList ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.MyNeedsList li {
+    cursor: pointer;
+    background-color: #ffffff;
+    margin: 0 0.5rem 0.5rem 0;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+}
+
+.MyNeedsList li:hover,
+.MyNeedsList li.active {
+    background-color: #dbffdb;
+}
+
+.MyNeedsList h4 {
+    font-size: 12px;
+    font-weight: normal;
+
+}
+
+.MyNeedsList p {
+    font-size: 16px;
+    font-weight: normal;
+    display: none;
+}
+
+/* --- SELECTED NEEDS --- */
+
+.SelectedNeeds li,
+.floatingSortableListElement {
+    padding: 0.5rem;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+.SelectedNeeds h4 span {
+    cursor: pointer;
+    font-size: 12px;
+    visibility: hidden;
+}
+
+.SelectedNeeds li:hover span {
+    visibility: visible;
+}
