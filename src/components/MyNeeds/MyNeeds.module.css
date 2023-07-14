@@ -64,10 +64,22 @@
     list-style: none;
 }
 
-.SelectedNeeds h4 span {
+.SelectedNeeds h4 {
+    display: grid;
+    grid-template-columns: auto 1fr 2fr;
+    align-items: center;
+}
+
+.SelectedNeeds h4 span.removeButton {
     cursor: pointer;
     font-size: 12px;
     visibility: hidden;
+    margin-right: 0.5rem;
+}
+.SelectedNeeds h4 span.categoryName {
+    font-size: 12px;
+    font-weight: normal;
+    margin-right: 0.5rem;
 }
 
 .SelectedNeeds li:hover span {

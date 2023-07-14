@@ -24,7 +24,11 @@ const getFromLocalStorage = (): Need['id'][] => {
 
 const SortableSelectedNeed = SortableElement<{need: Need, toggleNeed: (need: Need) => void}>(({need, toggleNeed}: {need: Need, toggleNeed: (need: Need) => void}) => {
     return <li className={styles.floatingSortableListElement}>
-        <h4><span onClick={() => toggleNeed(need)}>X</span> {need.label}</h4>
+        <h4>
+            <span className={styles.removeButton} onClick={() => toggleNeed(need)}>X</span>
+            <span className={styles.categoryName}>{need.category}</span>
+            <span className={styles.needName}>{need.label}</span>
+        </h4>
     </li>
 })
 
