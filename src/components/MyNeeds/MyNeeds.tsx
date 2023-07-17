@@ -23,7 +23,7 @@ const getFromLocalStorage = (): Need['id'][] => {
 }
 
 const SortableSelectedNeed = SortableElement<{need: Need, toggleNeed: (need: Need) => void}>(({need, toggleNeed}: {need: Need, toggleNeed: (need: Need) => void}) => {
-    return <li className={styles.floatingSortableListElement}>
+    return <li className={styles.selectedNeed}>
         <h4>
             <span className={styles.removeButton} onClick={() => toggleNeed(need)}>X</span>
             <span className={styles.categoryName}>{need.category}</span>
@@ -107,7 +107,7 @@ export const MyNeeds = ({needs}: {needs: NeedsByCategory[]}) => {
 
             <div className={styles.SelectedNeeds}>
                 <h2>Lista moich potrzeb</h2>
-                <SortableSelectedNeeds selectedNeeds={listOfSelectedNeeds} toggleNeed={toggleNeed} onSortEnd={onSortEnd} />
+                <SortableSelectedNeeds selectedNeeds={listOfSelectedNeeds} toggleNeed={toggleNeed} onSortEnd={onSortEnd} helperClass={styles.floatingSortableListElement} />
             </div>
         </div>
     );

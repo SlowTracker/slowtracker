@@ -57,31 +57,31 @@
 
 /* --- SELECTED NEEDS --- */
 
-.SelectedNeeds li,
-.floatingSortableListElement {
+.selectedNeed {
     padding: 0.5rem;
     border-bottom: 1px solid #ddd;
     list-style: none;
+    cursor: grab;
 }
 
-.SelectedNeeds h4 {
+.selectedNeed h4 {
     display: grid;
     grid-template-columns: auto 1fr 2fr;
     align-items: center;
 }
 
-.SelectedNeeds h4 span.removeButton {
+.selectedNeed h4 .removeButton {
     cursor: pointer;
     font-size: 12px;
     visibility: hidden;
     margin-right: 0.5rem;
 }
-.SelectedNeeds h4 span.categoryName {
+.selectedNeed h4 .categoryName {
     font-size: 12px;
     font-weight: normal;
     margin-right: 0.5rem;
 }
 
-.SelectedNeeds li:hover span {
+li.selectedNeed:hover span {
     visibility: visible;
 }
