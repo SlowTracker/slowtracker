@@ -1,0 +1,15 @@
+.nav {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.nav li.active {
+    font-weight: bold;
+}

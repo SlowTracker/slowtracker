@@ -3,6 +3,13 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    grid-template-areas:
+        'header header'
+        'list selected';
+}
+
+.MyNeeds h1 {
+    grid-area: header;
 }
 
 .MyNeeds h2 {
